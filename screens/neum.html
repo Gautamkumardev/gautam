@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+
+@font-face {
+  font-family: gkbasic;
+  src: url('file:///storage/emulated/0/Thor/Font/Product%20Sans%20Regular.ttf');
+}
+  * {
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family: 'gkbasic', sans-serif;
+   background: #ebeeee;
+   
+  }
+  .container {
+   min-height:70vh;
+   min-width:100%;
+   background: inherit;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.box {
+ background: inherit;
+ height: 100px;
+ width: 100px;
+ margin: 10px;
+ border-radius: 10px;
+ 
+}
+
+.up {
+ box-shadow: -3px -3px 6px white, 2px 2px 6px rgba(105,105,105, 0.5);
+ 
+}
+.up:hover {
+box-shadow: inset -3px -3px 6px white, inset 2px 2px 6px rgba(105,105,105, 0.5);
+
+}
+.inset {
+box-shadow: inset -3px -3px 6px white, inset 2px 2px 6px rgba(105,105,105, 0.5);
+}
+
+.inset:hover {
+box-shadow: -3px -3px 6px white, 2px 2px 6px rgba(105,105,105, 0.5);
+ 
+}
+.circle {
+  border-radius:50%;
+  box-shadow: -3px -3px 6px white, 2px 2px 6px rgba(105,105,105, 0.5);
+  position:relative;
+}
+
+.circle::after {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  border-radius: inherit;
+  box-shadow: inset -3px -3px 6px white, inset 2px 2px 6px rgba(105,105,105, 0.5);
+}
+.circle:hover::after {
+box-shadow: -3px -3px 6px white, 2px 2px 6px rgba(105,105,105, 0.5);
+
+}
+h1 {
+  text-align:center;
+  margin:10px;
+  width: 100%;
+   
+}
+
+
+</style>
+</head>
+<body>
+ <div class="container">
+<h1> NeuMorphism</h1>
+ <div class="box up" >
+ </div>
+ <div class="box inset" >
+ 
+ </div>
+ <div class="box circle" ></div>
+ </div>
+</body>
+</html>

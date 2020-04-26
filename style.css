@@ -153,7 +153,7 @@ header {
   margin: 1em;
   border-radius: 50%;
   transition: border-color 300ms ease;
-  border: 4px solid rgba(255,255,255,0.1);
+  border: 3px solid rgba(255,255,255,0.2);
   overflow: hidden;
   position: relative;
 
@@ -166,7 +166,7 @@ header {
 
 }
 .img:hover {
-  border-color: rgba(255,255,255,0.2);
+  border-color: #dda51e;
 }
 .profile {
   display: flex;
@@ -219,8 +219,10 @@ h1 {
   font-size: 3.5rem;
   font-family: 'Odibee Sans', cursive;
   text-transform: uppercase;
+  color: #fff;
+  margin: 1rem;
 }
-h1 span {
+h1 > span {
   color: #dda51e;
 }
 .head {
@@ -272,6 +274,9 @@ h1 span {
   transform: translate(0,0);
 }
 
+.about {
+  max-height: 999999px;
+}
 .p-info {
 
   margin: 0;
@@ -400,7 +405,122 @@ h1 span {
 .php .progress::after {
   width: 60%;
 }
+.creations h1 {
+  color: #fff;
+}
+.creations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
 
+}
+.project {
+  padding: 0;
+  width: 300px;
+  display: inline-block;
+  margin: 0.5em;
+
+}
+.project img {
+  width: 100%;
+  border: 2px solid #dda51e;
+
+}
+.project p {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Odibee Sans', cursive;
+}
+#social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#social li {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  transition: .5s;
+  position: relative;
+}
+#social li a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#social li:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  /* background: #d35400; */
+  border-radius: 50%;
+  transform: scale(.9);
+  z-index: -1;
+  transition: .5s;
+}
+#social li a {
+  color: inherit;
+}
+#social li:nth-child(1) {
+  color: #3b5998;
+  background-color: #000;
+}
+#social li:nth-child(3) {
+  color: #6e5494;
+  background-color: #000;
+}
+#social li:nth-child(2) {
+  color: #c4302b;
+  background-color: #000;
+}
+#social li:nth-child(4) {
+  color: #dd4b39;
+  background-color: #000;
+}
+#social li:nth-child(1):hover {
+  background: #3b5998;
+  color: #000;
+  box-shadow:
+  0 0 12px 6px #3b5998;
+}
+#social li:nth-child(3):hover {
+  background: #6e5494;
+  color: #000;
+  box-shadow:
+  0 0 12px 6px #6e5494;
+}
+#social li:nth-child(2):hover {
+  background: #c4302b;
+  color: #000;
+  box-shadow:
+  0 0 12px 6px #c4302b;
+}
+#social li:nth-child(4):hover {
+  background: #dd4b39;
+  color: #000;
+  box-shadow:
+  0 0 12px 6px #dd4b39;
+}
+
+.designation {
+  margin: 20px 0 0 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  border-top: 1px solid #dda51e;
+  font-family: 'Montserrat', sans-serif;
+}
 @media only screen and (min-width: 600px) {
   .main-img img {
     max-width: 400px;

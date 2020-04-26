@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+  <style type="text/css">
+    .accordion {
+      border: 1px solid #000;
+      margin: 1em auto;
+
+    }
+    .toggler {
+      background: #eee;
+      padding: 1em;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .toggler::after {
+      content: '\f055';
+      font-family: "fontawesome";
+      float: right;
+
+
+    }
+    .toggler.opened::after {
+      content: "\f056";
+    }
+    .content {
+      margin: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 300ms ease;
+    }
+  </style>
+</head>
+
+
+</div>
+
+</div>
+<body>
+<div class="container-fluid">
+<div class="accordion">
+<div class="toggler">
+Accordion 1
+</div>
+<p class="content">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+</div>
+<div class="accordion">
+<div class="toggler">
+Accordion 2
+</div>
+<p class="content">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+</div>
+<div class="accordion">
+<div class="toggler">
+Accordion 2
+</div>
+<p class="content">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+var toggler = document.getElementsByClassName("toggler");
+
+for (i = 0; i < toggler.length; i++) {
+toggler[i].onclick = function () {
+
+
+
+
+
+
+this.classList.toggle("opened");
+
+var content = this.nextElementSibling;
+
+if (content.style.maxHeight) {
+content.style.maxHeight = null;
+content.style.margin = 0;
+} else {
+content.style.maxHeight = content.scrollHeight +"px";
+content.style.margin = '1em';
+}}}
+
+
+
+</script>
+</html>
