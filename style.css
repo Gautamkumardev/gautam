@@ -532,14 +532,24 @@ footer {
   box-shadow:
   0 0 12px 6px  #0088cc;
 }
-
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
 .designation {
   margin: 20px 0 0 0;
   text-align: center;
   width: 100%;
   color: #fff;
   border-top: 1px solid #dda51e;
-  font-family: 'Montserrat', sans-serif;
+  font-family:'Odibee Sans', cursive;
+  
+
+}
+.designation span {
+  font-family: neon;
+  color:#ffa500;
+  text-shadow: 0 0 3vw #F40A35;
 }
 @media only screen and (min-width: 600px) {
   .main-img img {
