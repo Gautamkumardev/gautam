@@ -444,16 +444,17 @@ footer {
   padding: 0;
   list-style: none;
   justify-content: center;
+
 }
 #social li {
   position: relative;
   display: block;
-  font-size: 30px;
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
   border-radius: 50%;
-  margin: 0 15px;
+  margin: 0 10px;
   transition: .5s;
   position: relative;
 
@@ -496,6 +497,11 @@ footer {
   color: #dd4b39;
   background-color: #000;
 }
+#social li:nth-child(5) {
+  color: #0088cc;
+  background-color: #000;
+
+}
 #social li:nth-child(1):hover {
   background: #3b5998;
   color: #000;
@@ -519,6 +525,12 @@ footer {
   color: #000;
   box-shadow:
   0 0 12px 6px #dd4b39;
+}
+#social li:nth-child(5):hover {
+  background: #0088cc;
+  color: #000;
+  box-shadow:
+  0 0 12px 6px  #0088cc;
 }
 
 .designation {
