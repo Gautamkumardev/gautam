@@ -432,11 +432,18 @@ h1 > span {
   text-align: center;
   font-family: 'Odibee Sans', cursive;
 }
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
 #social {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+  justify-content: center;
 }
 #social li {
   position: relative;
@@ -449,6 +456,7 @@ h1 > span {
   margin: 0 15px;
   transition: .5s;
   position: relative;
+
 }
 #social li a {
   position: absolute;
