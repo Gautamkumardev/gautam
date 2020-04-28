@@ -43,6 +43,7 @@ body {
   z-index: -9;
   opacity: 0;
   transition: 400ms;
+  transition-delay: 200ms;
 
 }
 .content h3 {
