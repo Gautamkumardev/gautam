@@ -51,7 +51,7 @@ body {
   text-align: center;
   transform: translate(0, 20px);
   transition: 400ms;
-  transition-delay: 100ms;
+  transition-delay: 200ms;
 }
 .content p {
   text-align: justify;
