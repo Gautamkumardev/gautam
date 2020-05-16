@@ -138,6 +138,7 @@ header {
   position: relative;
   background: url("images/background.jpg");
   background-size: 100%;
+  background-position: 0 -20%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
