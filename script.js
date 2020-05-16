@@ -14,7 +14,9 @@ function toggle() {
     setTimeout(function() {
       nav.style.overflow = "visible";
     }, 200);
+    
 
   }
 
 }
+console.log(Console())
