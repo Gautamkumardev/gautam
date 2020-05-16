@@ -137,7 +137,7 @@ header {
 .home {
   position: relative;
   background: url("images/river-between-green-leafed-tree-1766838.jpg");
-  background-size:cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
